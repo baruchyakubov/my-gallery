@@ -61,8 +61,8 @@ function createProjects() {
             {
                 id: "pacman",
                 name: "pacman",
-                title: "Better push those boxes",
-                desc: "lorem ipsum lorem ipsum lorem ipsum",
+                title: "pacman",
+                desc: "regular pacman game",
                 url: "my projects/pacman-ex-starter 2.1/index.html",
                 publishedAt: _getDate(),
                 labels: ["Matrixes", "keyboard events"],
