@@ -73,7 +73,8 @@ function onSetMessage(val) {
 }
 
 function onGetContact() {
-    if (getEmail() === undefined || getSubject() === undefined || getMessage() === undefined) return
+    if (getEmail() === undefined || getSubject() === undefined || getMessage() === undefined ||
+    getEmail() === '' || getSubject() === '' || getMessage() === '') return
     window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${getEmail()}&su=${getSubject()}&body=${getMessage()}`)
 }
 

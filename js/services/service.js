@@ -1,6 +1,6 @@
 'use strict'
 var gProjects
-var gEmail
+var gEmail 
 var gSubject
 var gMessage
 
