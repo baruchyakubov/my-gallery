@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame()">
+    <h1>Mine Sweeper</h1>
+    <div class="main">
+        <div class="levels">
+            <button onclick="easyMode()">easy</button>
+            <button onclick="mediumMode()">medium</button>
+            <button onclick="hardMode()">hard</button>
+        </div>
+        <div onclick="restartGame()" class="face">😃</div>
+        <div class="lives">❤️❤️❤️</div>
+        <div class="timer">TIMER:</div>
+        <div class="best">best time:</div>
+    </div>
+    <div class="board"></div>
+    <div class="bonus">
+        <button onclick="undo()">undo</button>
+        <button class="safeClick" onclick="safeClickes(this)">3 safe clicks</button>
+        <button class="hints" onclick="hints(this)">3 hints</button>
+        <button onclick="darkMode(this)">dark mode</button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/util.js"></script>
+</body>
+
+</html>

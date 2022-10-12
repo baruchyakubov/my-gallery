@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book-shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="onInit()">
+   <h1>book-shop</h1> 
+   <div class="filter">
+    <h4>filter:</h4>
+    <label>
+        Max price:
+        <input type="range" min="10" max="50" value="50" class="filter-price-range"
+            onchange="this.title=this.value;onSetFilterBy({maxPrice: this.value})" />
+    </label>
+    <label>
+        Min rate:
+        <input type="range" min="0" max="10" value="0" class="filter-rate-range"
+            onchange="this.title=this.value;onSetFilterBy({minRate: this.value})" />
+            <input class="filter-by-txt" type="text" oninput="onSetFilterBy({bookName: this.value})" placeholder="search books" />
+    </label>
+   </div>
+   <section class="book-list"></section>
+   <button class="btn next-page" onclick="onNextPage()">Next Page</button>
+   <div class="description">
+    <h2></h2>
+    <h3>car description</h3>
+    <p></p>
+    <div class="rate"></div>
+   </div>
+   <script src="js/services/utils.service.js"></script>
+   <script src="js/services/storage.service.js"></script>
+   <script src="js/services/book.service.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>

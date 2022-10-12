@@ -1,0 +1,56 @@
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    margin-left: 600px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+button {
+    margin-left: 685px;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(67, 58, 144);
+    color: beige;
+    border-radius: 20%;
+    border: 3px salmon solid;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(53, 45, 110);
+    border: 3px rgb(170, 82, 73) solid;
+}
+
+table {
+    margin-left: 530px;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: rgb(174, 174, 2);
+    width: 400px;
+    height: 400px;
+}
+
+td {
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: rgb(77, 77, 23);
+}
+div{
+    display: none;
+   font-style: italic;
+   background-color: rgb(148, 122, 173);
+   position: absolute;
+   height: 50px;
+   width: 100px;
+   font-size: x-large;
+   border-radius: 20%;
+   padding: 20px;
+   border: 5px orange solid;
+   margin-left: 660px;
+   margin-top: 50px;
+}
