@@ -14,7 +14,7 @@ function renderProjects(projects){
           <i class="fa fa-plus fa-3x"></i>
         </div>
       </div>
-      <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+      <img class="img-fluid" src="${project.img}" alt="">
     </a>
     <div class="portfolio-caption">
       <h4>${project.name}</h4>
@@ -39,17 +39,13 @@ function renderProjects(projects){
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2>${project.name}</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis
-                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-                  cupiditate,
-                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p class="item-intro text-muted">${project.name}.</p>
+                <img class="img-fluid d-block mx-auto" src="${project.img}" alt="">
+                <p>${project.desc}</p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
+                  <li>Date: ${project.publishedAt}</li>
                   <li>Client: Threads</li>
-                  <li><a href="${project.url}><button class="bg-secondary">enter project</button></a></li>
+                  <li><a href="${project.url}"><button class="bg-secondary">enter project</button></a></li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
