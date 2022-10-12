@@ -25,15 +25,29 @@
 
 </head>
 
-<body id="page-top">
+<body class="bg-dark style"  id="page-top">
   <div class="offcanvas-btn" onclick="openCanvas()">
     <i class="fa fa-comment" aria-hidden="true"></i>
   </div>
-  <aside class="offcanvas-aside">
+  <aside class="offcanvas-aside bg-secondary ">
     <a href="./projects/touchTheNums/index.html"></a>
     <!-- Contact -->
     <section>
-      <h4>Contact Me</h4>
+      <h4>contact me!</h4>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input oninput="onSetEmail(this.value)" type="email" class="contact form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Subject</label>
+        <input oninput="onSetSubject(this.value)" type="email" class="contact form-control" id="exampleFormControlInput1" placeholder="type subject here">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Message body</label>
+        <textarea oninput="onSetMessage(this.value)" class="contact form-control" id="exampleFormControlTextarea1" rows="3" placeholder="type message text here"></textarea>
+        <button onclick="onGetContact()" type="submit" class="btn btn-dark mt-3">Submit</button>
+      </div>
+
     </section>
 
   </aside>
@@ -68,9 +82,9 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Welcome To my Portfolio</div>
-        <div class="intro-heading">It's Nice To Meet You</div>
-        <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
+        <div class="text-primary intro-lead-in">Welcome To my gallery</div>
+        <div class="text-primary intro-heading">It's Nice To Meet You</div>
+        <a class="bg-dark btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
     </div>
   </header>
@@ -121,12 +135,12 @@
   </section>
 
   <!-- Portfolio Grid -->
-  <section class="bg-light" id="portfolio">
+  <section class="bg-dark" id="portfolio">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">My Projects</h2>
-          <h3 class="section-subheading text-muted">my projects i did during this course.</h3>
+          <h3 class="section-subheading text-muted">the projects i did during this course.</h3>
         </div>
       </div>
       <div class="row myProj"></div>
@@ -135,7 +149,7 @@
 
 
   <!-- Me -->
-  <section class="bg-light" id="me" style="padding: 0px;">
+  <section class="bg-dark" id="me" style="padding: 0px;">
     <div class="row">
       <div class="col-sm-4">
         <div class="team-member">

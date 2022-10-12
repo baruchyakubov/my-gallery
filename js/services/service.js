@@ -1,6 +1,8 @@
 'use strict'
 var gProjects
-
+var gEmail
+var gSubject
+var gMessage
 
 function createProjects() {
     gProjects = loadFromStorage('projects')
@@ -80,6 +82,30 @@ function _getDate() {
     var date = new Date()
     return date.toLocaleDateString()
 }
+
+function setEmail(val){
+    gEmail = val
+}
+
+function setSubject(val){
+    gSubject = val
+}
+
+function setMessage(val){
+    gMessage = val
+}
+function getEmail(){
+   return gEmail 
+}
+
+function getSubject(){
+   return gSubject 
+}
+
+function getMessage(){
+   return gMessage 
+}
+
 
 
 

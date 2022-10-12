@@ -27,6 +27,7 @@ h6 {
 section {
     padding: 100px 0;
 }
+
 section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
@@ -190,7 +191,7 @@ body {
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../img/header-bg.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
